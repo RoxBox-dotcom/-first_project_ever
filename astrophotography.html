@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☾ Astrophotography Guide</title>
+    <style>
+      body {
+        background: linear-gradient(
+          110.6deg,
+          rgb(156, 116, 129) -18.3%,
+          rgb(67, 54, 74) 16.4%,
+          rgb(47, 48, 67) 68.2%,
+          rgb(27, 23, 36) 99.1%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: aliceblue;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        color: aliceblue;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: medium;
+        margin-bottom: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        border-radius: 20px;
+      }
+      p {
+        color: aliceblue;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        line-height: 1.5;
+      }
+
+      button {
+        display: block;
+        padding: 15px;
+        background: aliceblue;
+        font: #1e1a28;
+        font-size: 18px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        border-radius: 55px;
+        border: none;
+        margin: 20px auto;
+        box-shadow: 5px 5px 15px rgb(255, 255, 255, 0.2);
+        transition: all 200ms ease;
+        cursor: pointer;
+      }
+      button:hover {
+        color: aliceblue;
+        background-color: #1e1a28;
+      }
+      footer {
+        font-size: small;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: aliceblue;
+        text-align: center;
+      }
+
+      hr {
+        margin-top: 20px;
+        border-radius: 50px;
+      }
+      .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+      .linkStyle {
+        color: rgb(220, 111, 72);
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+      }
+      .linkStyle:hover {
+        text-decoration: underline;
+      }
+      .purpleHighlight {
+        color: rgb(160, 82, 232);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>For Astrophotography enthusiasts</h1>
+      <h2>Learn more about astrophotography</h2>
+      <img
+        src="https://petapixel.com/assets/uploads/2022/05/astrophotography-the-ultimate-guide-photographer-under-the-milky-way-800x420.jpg"
+        alt="starry sky"
+      />
+      <hr />
+
+      <p>
+        <span class="purpleHighlight">Astrophotography</span>, also known as
+        astronomical imaging, is the term given to the art of photographing the
+        night sky, and it's <em>surprisingly</em> easy. <br />
+
+        <a
+          href="https://en.wikipedia.org/wiki/Astrophotography"
+          target="_blank"
+          class="linkStyle"
+        >
+          Find out more on Wikipedia</a
+        >
+      </p>
+      <button>Buy print</button>
+      <footer>This page was coded by Roxy Frech</footer>
+    </div>
+    <script>
+      function buyPrint() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        if (name.length > 0) {
+          alert(
+            "Thank you " + name + ", check your inbox to select a print 🌌"
+          );
+        } else {
+          alert("Thank you, check your inbox to select a print 🌌");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", buyPrint);
+    </script>
+  </body>
+</html>
+
